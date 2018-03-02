@@ -9,8 +9,8 @@ ENV NODE_VERSION 6.5.0
 # Install NVM
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash \
     && . $NVM_DIR/nvm.sh \
-    && sudo nvm install $NODE_VERSION \
-    && sudo nvm alias default $NODE_VERSION \
+    && nvm install $NODE_VERSION \
+    && nvm alias default $NODE_VERSION \
     && nvm use default
 
 # Add binaries to the path so commands are available
