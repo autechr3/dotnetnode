@@ -11,4 +11,5 @@ RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh
     && nvm alias default $NODE_VERSION \
     && nvm use default
 
+RUN node -v
 RUN npm -v
